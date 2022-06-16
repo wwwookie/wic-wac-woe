@@ -10,11 +10,15 @@ import { Input } from "@angular/core";
 export class FieldComponent implements OnInit {
 
   @Input()
-  field?: Field;
+  field: Field = {index : 0, content : '   '};
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  setContent({element, content}: { element: any, content: string }) : void {
+    element.textContent = content;
   }
 
 }

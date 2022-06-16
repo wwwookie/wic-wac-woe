@@ -1,5 +1,1 @@
-<div *ngIf="field">
-
-<h2>{{field.content}}</h2>
-
-</div>
+<button (click)="setContent({element : $event.target, content : 'x'})">Hi, this is a field</button>

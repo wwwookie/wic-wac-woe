@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Field} from "../field";
+import { Field } from "../field";
 
 @Component({
   selector: 'app-board',
@@ -8,7 +8,6 @@ import { Field} from "../field";
 })
 export class BoardComponent implements OnInit {
 
-  // TODO: make rows observable
   row1: Array<Field> = [];
   row2: Array<Field> = [];
   row3: Array<Field> = [];
